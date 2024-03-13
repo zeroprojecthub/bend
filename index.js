@@ -24,15 +24,15 @@ const data = [{
     auther: "pratham sir"
 }];
 
-app.get('/fullstack-fawn-nine.vercel.app', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-app.get('/fullstack-fawn-nine.vercel.app/twitter', (req, res) => {
+app.get('/twitter', (req, res) => {
     res.send("twitter is call");
 })
 
-app.get('fullstack-fawn-nine.vercel.app/api/jokes', (req, res) => {
+app.get('/api/jokes', (req, res) => {
     res.json(data);
 })
 app.listen(port, () => {
